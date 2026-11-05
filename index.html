@@ -99,25 +99,25 @@ svg{display:block}
 .by{margin-top:58px;color:var(--muted);font-size:22px;font-weight:300}
 .by b{color:var(--ink);font-weight:500}
 
-.box{background:var(--panel);width:100%;border:1px solid var(--line2);padding:40px 36px 36px;position:sticky;top:24px}
-.box h3{font-size:34px;line-height:1}
-.box .sub{margin:16px 0 34px;color:var(--muted);font-size:17px;letter-spacing:.03em;text-transform:uppercase}
-.tier{border:1px solid var(--line2);padding:26px 24px 26px;margin-bottom:18px;display:grid;grid-template-columns:1fr auto;column-gap:20px;align-items:center}
-.tier h4{font-weight:400;font-size:25px;line-height:1.2}
-.tier .d2{color:var(--muted);font-size:17px;margin-top:8px;max-width:300px;line-height:1.4}
-.tier .pr{grid-column:1;margin-top:20px;font-weight:600;font-size:22px}
+.box{background:var(--panel);width:100%;border:1px solid var(--line2);padding:30px 28px 28px;position:sticky;top:24px}
+.box h3{font-size:28px;line-height:1}
+.box .sub{margin:12px 0 24px;color:var(--muted);font-size:13px;letter-spacing:.03em;text-transform:uppercase}
+.tier{border:1px solid var(--line2);padding:18px 18px;margin-bottom:12px;display:grid;grid-template-columns:1fr auto;column-gap:20px;align-items:center}
+.tier h4{font-weight:400;font-size:20px;line-height:1.2}
+.tier .d2{color:var(--muted);font-size:14px;margin-top:6px;max-width:300px;line-height:1.4}
+.tier .pr{grid-column:1;margin-top:14px;font-weight:600;font-size:17px}
 .step{grid-column:2;grid-row:1/3;display:flex;align-items:center;gap:14px}
-.step button{width:54px;height:54px;border:1px solid var(--line2);background:transparent;border-radius:3px;display:grid;place-items:center}
+.step button{width:44px;height:44px;border:1px solid var(--line2);background:transparent;border-radius:3px;display:grid;place-items:center}
 .step button:disabled{color:#666;cursor:not-allowed}
 .step button:not(:disabled):hover{border-color:var(--ink)}
-.step output{min-width:20px;text-align:center;font-weight:700;font-size:20px}
-.tot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line2);margin-top:36px;padding-top:36px}
-.tot span{color:var(--muted);font-size:17px;letter-spacing:.03em;text-transform:uppercase}
-.tot b{font-family:var(--display);font-size:34px;font-weight:700;line-height:1}
-.go{width:100%;height:72px;margin-top:36px;border:0;border-radius:3px;background:var(--red-dim);color:var(--red-dim-ink);font-weight:600;font-size:21px;cursor:not-allowed}
+.step output{min-width:18px;text-align:center;font-weight:700;font-size:16px}
+.tot{display:flex;align-items:center;justify-content:space-between;margin-top:6px;padding-top:14px}
+.tot span{color:var(--muted);font-size:13px;letter-spacing:.03em;text-transform:uppercase}
+.tot b{font-family:var(--display);font-size:28px;font-weight:700;line-height:1}
+.go{width:100%;height:56px;margin-top:22px;border:0;border-radius:3px;background:var(--red-dim);color:var(--red-dim-ink);font-weight:600;font-size:17px;cursor:not-allowed}
 .go.on{background:var(--red);color:#fff;cursor:pointer}
 .go.on:hover{filter:brightness(1.1)}
-.note{display:flex;align-items:center;gap:14px;margin-top:28px;color:var(--muted);font-size:17px}
+.note{display:flex;align-items:center;gap:12px;margin-top:20px;color:var(--muted);font-size:14px}
 .note svg{flex:none}
 
 footer{border-top:1px solid var(--line);padding:62px 0 60px}
@@ -183,7 +183,7 @@ button,a{touch-action:manipulation}
   .step{gap:8px}
   .step button{width:42px;height:42px}
   .tier>div:first-child{min-width:0}
-  .go{height:60px;font-size:18px}
+  .go{height:52px;font-size:16px}
   .ev-hero{height:260px}
   .lead{margin:40px 0 36px}
   .meta{padding:32px 0}
@@ -196,6 +196,33 @@ button,a{touch-action:manipulation}
   html{scroll-behavior:auto}
   *,*:before,*:after{animation:none!important;transition:none!important}
 }
+
+.pf{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.pf.open{grid-template-rows:1fr}
+.pf>div{overflow:hidden;min-height:0}
+.pf form{border-top:1px solid var(--line2);margin-top:12px;padding-top:6px;display:grid;gap:14px}
+.pf label{display:grid;gap:8px;font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.pf input{height:50px;padding:0 16px;background:var(--bg);color:var(--ink);border:1px solid var(--line2);border-radius:3px;font:inherit;font-size:15px;text-transform:none;letter-spacing:0}
+.pf input:focus{outline:1px solid var(--red);border-color:var(--red)}
+.pf .err{color:var(--red);font-size:13px}
+.fees{border-top:1px solid var(--line2);margin-top:18px;padding-top:14px;display:grid;gap:8px}
+.fees div{display:flex;justify-content:space-between;font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted)}
+.fees b{color:var(--ink);font-weight:600}
+.fees .none{display:none}
+.ord{padding-top:110px;padding-bottom:140px;max-width:1240px;margin:0 auto}
+.ord .kick{color:var(--red);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:15px;margin-bottom:22px;word-break:break-all}
+.ord h1{font-size:clamp(48px,9vw,112px);line-height:.95;margin:0}
+.ord p.lead2{color:var(--muted);font-size:20px;font-weight:300;margin:44px 0 52px;max-width:760px}
+.ord .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);padding:34px 0}
+.ord .grid3 span{display:block;color:var(--muted);font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px}
+.ord .grid3 b{font-size:20px;font-weight:600;word-break:break-all}
+.ord .act{margin-top:40px;display:flex;gap:12px;flex-wrap:wrap}
+.ord .act a{display:inline-flex;align-items:center;height:52px;padding:0 26px;border-radius:3px;background:var(--red);color:#fff;font-weight:600;font-size:16px}
+.ord .act a.o{background:transparent;border:1px solid var(--line2);color:var(--ink)}
+.ord .spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line2);border-top-color:var(--red);border-radius:50%;animation:sp .9s linear infinite;vertical-align:-2px;margin-right:10px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.ord.ok h1{color:#2fbf71}
+@media(max-width:700px){.ord{padding-top:60px}.ord .grid3{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -260,6 +287,15 @@ button,a{touch-action:manipulation}
             <div class="step"><button data-i="2" data-s="-1" aria-label="Remove Vip ticket" disabled><svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/></svg></button><output>0</output><button data-i="2" data-s="1" aria-label="Add Vip ticket"><svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5v14"/></svg></button></div>
             <div class="pr">₦15,000</div></div>
         </div>
+        <div class="pf" id="pf"><div>
+          <form id="cf" novalidate autocomplete="on">
+            <label>Full name<input id="cn" placeholder="Ada Obi" autocomplete="name"></label>
+            <label>Email<input id="ce" type="email" placeholder="ada@email.com" autocomplete="email"></label>
+            <label>Phone, optional<input id="cp" type="tel" placeholder="080 0000 0000" autocomplete="tel"></label>
+            <div class="err" id="cerr"></div>
+          </form>
+        </div></div>
+        <div class="fees"><div><span>Tickets</span><b id="sub">₦0</b></div><div><span>Service fee</span><b id="fee">₦0</b></div></div>
         <div class="tot"><span id="cnt">0 tickets</span><b id="sum">₦0</b></div>
         <button class="go" id="go" disabled>Select a ticket</button>
         <div class="note">
@@ -307,6 +343,20 @@ button,a{touch-action:manipulation}
       <div id="slotEv"></div>
     </div>
   </section>
+  <!-- ORDER -->
+  <section class="view" id="order" hidden>
+    <div class="ord pad" id="ordBox">
+      <div class="kick" id="oKick"></div>
+      <h1 class="d" id="oTitle"></h1>
+      <p class="lead2" id="oMsg"></p>
+      <div class="grid3">
+        <div><span>Tickets</span><b id="oTix"></b></div>
+        <div><span>Amount</span><b id="oAmt"></b></div>
+        <div><span>Order</span><b id="oRef"></b></div>
+      </div>
+      <div class="act" id="oAct"></div>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -324,12 +374,13 @@ button,a{touch-action:manipulation}
   </div>
 </footer>
 
+<script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
 const TIERS=[
   {n:'Early Bird',d:'Entry',p:3500},
   {n:'Regular',d:'Entry',p:4500},
   {n:'Vip',d:'Front stage access(secluded space away from the crowd) best experience',p:15000}
-], MAX=2, qty=TIERS.map(()=>0);
+], MAX=2, FEE_PER_TICKET=395, qty=TIERS.map(()=>0);
 const fmt=n=>'₦'+n.toLocaleString('en-NG');
 const minus='<svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/></svg>';
 const plus='<svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5v14"/></svg>';
@@ -342,10 +393,14 @@ function render(){
     m.disabled=qty[i]===0; p.disabled=total>=MAX; el.classList.toggle('sel',qty[i]>0);
   });
   document.getElementById('cnt').textContent=total+' ticket'+(total===1?'':'s');
-  document.getElementById('sum').textContent=fmt(sum);
+  const fee=total*FEE_PER_TICKET;
+  document.getElementById('sub').textContent=fmt(sum);
+  document.getElementById('fee').textContent=fmt(fee);
+  document.getElementById('sum').textContent=fmt(sum+fee);
+  document.getElementById('pf').classList.toggle('open',total>0);
   const go=document.getElementById('go');
   go.disabled=total===0; go.classList.toggle('on',total>0);
-  go.textContent=total?'Checkout · '+fmt(sum):'Select a ticket';
+  go.textContent=total?'Pay · '+fmt(sum+fee):'Select a ticket';
 }
 tiersEl.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b||b.disabled)return;
@@ -355,11 +410,100 @@ tiersEl.addEventListener('click',e=>{
 });
 render();
 
+/* paystack + order confirmation */
+const PAYSTACK_PK='pk_live_261433872473e37ee07e8a98017c97b7360241f8';
+const VERIFY_URL='';            // e.g. '/api/verify' (server route that checks the reference with Paystack). Empty = confirm on Paystack's success callback.
+const MIN_SHOW_MS=5000;         // confirming page always shows at least this long before confirmation
+const POLL_MS=3000, POLL_MAX=200; // ~10 min
+const cerr=document.getElementById('cerr');
+const subtotal=()=>qty.reduce((a,q,i)=>a+q*TIERS[i].p,0);
+const ticketCount=()=>qty.reduce((a,b)=>a+b,0);
+let pollT=null;
+function stopPoll(){clearTimeout(pollT);pollT=null;}
+function loadOrders(){try{return JSON.parse(localStorage.getItem('vtx_orders')||'{}');}catch(_){return {};}}
+const mem={};
+function getOrder(ref){return mem[ref]||loadOrders()[ref];}
+function saveOrder(o){mem[o.ref]=o;try{const all=loadOrders();all[o.ref]=o;localStorage.setItem('vtx_orders',JSON.stringify(all));}catch(_){}}
+function setStatus(ref,status,extra){const o=getOrder(ref);if(!o)return;Object.assign(o,extra||{},{status});saveOrder(o);if(!ord.hidden&&curRef===ref)renderOrder(o);}
+let curRef=null;
+const VIEW={
+  pending:{t:'Confirming payment',m:'If you just paid, this page updates on its own. Keep this tab open.',spin:true},
+  success:{t:'Payment confirmed',m:null},
+  cancelled:{t:'Payment cancelled',m:'You closed the payment window. You have not been charged and your tickets are not booked. Try again whenever you are ready.'},
+  failed:{t:'Payment failed',m:'Your payment did not go through. You have not been charged. Please try again.'},
+  timeout:{t:'Still processing',m:'We have not received confirmation yet. If you were debited, do not pay again. Keep your order reference and contact support.'}
+};
+function renderOrder(o){
+  const v=VIEW[o.status]||VIEW.pending;
+  document.getElementById('ordBox').classList.toggle('ok',o.status==='success');
+  document.getElementById('oKick').textContent='Order '+o.ref;
+  document.getElementById('oTitle').textContent=v.t;
+  document.getElementById('oMsg').innerHTML=(v.spin?'<i class="spin"></i>':'')+(v.m||('Your '+(o.count===1?'ticket has':'tickets have')+' been sent to '+o.email.replace(/</g,'&lt;')+'. See you there.'));
+  document.getElementById('oTix').textContent=o.count;
+  document.getElementById('oAmt').textContent=fmt(o.amount);
+  document.getElementById('oRef').textContent=o.ref;
+  const retry='<a href="#/e/noda-freshers-party-halloween-edition">Try again</a>',back='<a class="o" href="#/">Back to events</a>';
+  document.getElementById('oAct').innerHTML=o.status==='success'?'<a href="#/">Back to events</a>':(o.status==='failed'||o.status==='cancelled')?retry+back:o.status==='timeout'?back:'';
+}
+function openOrder(ref,fromRoute){
+  const o=getOrder(ref);
+  if(!o){show(false);try{history.replaceState(null,'','#/');}catch(_){}return;}
+  stopPoll();curRef=ref;
+  home.hidden=true;ev.hidden=true;ord.hidden=false;window.scrollTo({top:0,behavior:'instant'});
+  if(!fromRoute){try{history.replaceState(null,'','#/order/'+encodeURIComponent(ref));}catch(_){}}
+  renderOrder(o);
+  if(o.status==='pending')poll(ref);
+}
+function poll(ref){
+  let tries=0;
+  const tick=async()=>{
+    const o=getOrder(ref);if(!o||o.status!=='pending')return;
+    let st='pending';
+    if(VERIFY_URL){
+      try{const r=await fetch(VERIFY_URL+'?reference='+encodeURIComponent(ref)+'&amount='+o.amount);const j=await r.json();st=j.status||'pending';}catch(_){}
+    }else if(o.paid){st='success';}
+    if((st==='success'||st==='failed')&&Date.now()-(o.pendingAt||0)<MIN_SHOW_MS){pollT=setTimeout(tick,500);return;}
+    if(st==='success'||st==='failed'){setStatus(ref,st);return;}
+    if(++tries>=POLL_MAX){setStatus(ref,'timeout');return;}
+    pollT=setTimeout(tick,POLL_MS);
+  };
+  pollT=setTimeout(tick,1500);
+}
+document.getElementById('go').addEventListener('click',()=>{
+  const sub=subtotal(),cnt=ticketCount();if(!sub)return;
+  const name=cn.value.trim(),email=ce.value.trim(),phone=cp.value.trim();
+  if(!name){cerr.textContent='Enter your full name.';cn.focus();return;}
+  if(!/^\S+@\S+\.\S+$/.test(email)){cerr.textContent='Enter a valid email.';ce.focus();return;}
+  cerr.textContent='';
+  if(typeof PaystackPop==='undefined'){cerr.textContent='Payment script failed to load. Check your connection.';return;}
+  const amount=sub+cnt*FEE_PER_TICKET;
+  const tickets=TIERS.map((t,i)=>qty[i]?qty[i]+'x '+t.n:'').filter(Boolean).join(', ');
+  const ref='VTX-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
+  saveOrder({ref,name,email,phone,count:cnt,amount,tickets,status:'initiated'});
+  PaystackPop.setup({
+    key:PAYSTACK_PK,email,amount:amount*100,currency:'NGN',ref,
+    metadata:{custom_fields:[
+      {display_name:'Name',variable_name:'name',value:name},
+      {display_name:'Phone',variable_name:'phone',value:phone},
+      {display_name:'Tickets',variable_name:'tickets',value:tickets}
+    ]},
+    callback:function(r){
+      setStatus(ref,'pending',{paid:true,pendingAt:Date.now()});
+      qty.fill(0);render();
+      openOrder(ref);
+    },
+    onClose:function(){
+      setTimeout(()=>{const o=getOrder(ref);if(o&&!o.paid&&o.status==='initiated'){setStatus(ref,'cancelled');openOrder(ref);}},400);
+    }
+  }).openIframe();
+});
+
 /* router */
 const home=document.getElementById('home'),ev=document.getElementById('event');
 const boxEl=document.querySelector('.box'),slotH=document.getElementById('slotHome'),slotE=document.getElementById('slotEv');
-function show(isEv){(isEv?slotE:slotH).appendChild(boxEl);home.hidden=isEv;ev.hidden=!isEv;window.scrollTo({top:0,behavior:'instant'});}
-function route(){show(location.hash.startsWith('#/e/'));}
+const ord=document.getElementById('order');
+function show(isEv){stopPoll();ord.hidden=true;(isEv?slotE:slotH).appendChild(boxEl);home.hidden=isEv;ev.hidden=!isEv;window.scrollTo({top:0,behavior:'instant'});}
+function route(){const h=location.hash;if(h.startsWith('#/order/')){openOrder(decodeURIComponent(h.slice(8)),true);return;}show(h.startsWith('#/e/'));}
 addEventListener('hashchange',route);
 document.addEventListener('click',e=>{
   const a=e.target.closest('a[href^="#/"]');if(!a)return;
